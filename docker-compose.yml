@@ -1,0 +1,12 @@
+---
+version: '2'
+
+services:
+  app:
+    build: app
+    # deploy:
+    #   replicas: 4
+  proxy:
+    build: proxy
+    ports:
+      - "80:80"
